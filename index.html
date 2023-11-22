@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/calculadora.css">
+</head>
+<body>
+    <div id="calculadora">
+        <div>
+            <div id="resultado"><input id="digitados" type="text" disabled value="" placeholder="0"></div>
+            <div id="historico">3 * 2</div>
+        </div>
+        <div class="calculatorLine">
+            <input class="tecla" value="AC" id="limpar" type="button">
+            <input class="tecla" value="" type="button">
+            <input class="tecla" value="" type="button">
+            <input class="tecla" value="/" id="divisao" type="button">
+        </div>
+        <div class="calculatorLine">
+           <input class="tecla" value="1" type="button" id="um">
+           <input class="tecla" value="2" type="button" id="dois">
+           <input class="tecla" value="3" type="button" id="tres">
+           <input class="tecla" value="*" id="multiplicacao" type="button">
+        </div>
+        <div class="calculatorLine">
+            <input class="tecla" value="4" type="button" id="quatro">
+            <input class="tecla" value="5" type="button" id="cinco">
+            <input class="tecla" value="6" type="button" id="seis">
+            <input class="tecla" value="-" id="subtracao" type="button">
+        </div>
+        <div class="calculatorLine">
+            <input class="tecla" value="7" type="button" id="sete">
+            <input class="tecla" value="8" type="button" id="oito"> 
+            <input class="tecla" value="9" type="button" id="nove">
+            <input class="tecla" value="+" id="adicao" type="button">
+        </div>
+        <div class="calculatorLine">
+            <input class="tecla" value="" type="button">
+            <input class="tecla" value="0" type="button" id="zero">
+            <input class="tecla" value="." type="button">
+            <input class="tecla" value="=" id="igual" type="button">
+        </div>
+    </div>
+    <script src="teclas/numeros.js"></script>
+    <script src="teclas/digitar.js"></script>
+</body>
+</html>
