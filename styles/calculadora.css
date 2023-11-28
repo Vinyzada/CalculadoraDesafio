@@ -7,11 +7,18 @@ body{
 #calculadora{
     background-color: black;
     padding: 10px;
+    box-shadow: 0px 0px 10px 10px black;
+}
+#valores{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 .calculatorLine{
     display: flex;
 }
 .tecla{
+    cursor: pointer;
     appearance: none;
     border: none;
     width: 50px;
@@ -23,31 +30,43 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .55s ease;
+}
+.tecla:hover{
+    transform: translateY(5px);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#calculadora .vacuo:hover{
+    background-color: black;
 }
 
 #subtracao,#adicao,#multiplicacao,#divisao{
     color: black;
     background-color: rgb(255, 255, 255);
 }
-#igual,#limpar{
+
+#igual,#AC{
     background-color: rgb(66, 66, 255);
 }
+
 #digitados{
-    width: 100%;
+    width: 220px;
     height: 40px;
     appearance: none;
     text-align: end;
     background-color: transparent;
     border: none;
     color: white;
+    font-size: 20px;
 }
-#resultado{
-    width: 100%;
-}
+
 #historico{
-    padding: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 220px;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: rgba(105, 105, 105, 0.986);
     text-align: end;
-    font-size: 15px;
-    height: 40px;
-    color: lightblue;
 }
