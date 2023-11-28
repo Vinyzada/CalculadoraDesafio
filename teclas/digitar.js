@@ -4,7 +4,7 @@ document.head.appendChild(numeros);
 
 const resposta = document.querySelector("#digitados")
 const historico = document.querySelector("#historico")
-console.log(historico)
+// console.log(historico)
 let equacao = ""
 function adicionar(){
     if(resposta.value == "/" || resposta.value == "*" || resposta.value == "+" || resposta.value == "-" ){

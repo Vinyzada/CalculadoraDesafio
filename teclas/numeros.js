@@ -14,4 +14,3 @@ let somar = document.querySelector("#adicao");
 let diminuir = document.querySelector("#subtracao");
 let ponto = document.querySelector("#ponto");
 let igual = document.querySelector("#igual");
-
