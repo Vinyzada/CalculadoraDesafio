@@ -1,7 +1,3 @@
-var numeros = document.createElement('script');
-numeros.src = 'teclas/numeros.js';
-document.head.appendChild(numeros);
-
 var digitar = document.createElement('script');
 numeros.src = 'teclas/digitar.js';
 document.head.appendChild(digitar);
